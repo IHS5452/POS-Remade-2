@@ -450,11 +450,10 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         atbHelper.addToTable(model, "PIATW", p.pricePIATW, price);
        
- atbHelper.changeStock(TSI.STOCK_PIATW, piate, TSI.INVENTORY_PIATW);
-       if (TSI.INVENTORY_PIATW == 0) {
+TSI.INVENTORY_PIATW = TSI.INVENTORY_PIATW - 1;
+
+        if (TSI.INVENTORY_PIATW == 0) {
             piate.setEnabled(false);
-
-
         }
     }//GEN-LAST:event_piateActionPerformed
 
@@ -550,12 +549,12 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         atbHelper.addToTable(model, "CIATW", p.priceCIATW, price);
        
- atbHelper.changeStock(TSI.STOCK_CIATW, ciatwe, TSI.INVENTORY_CIATW);
-  if (TSI.INVENTORY_CIATW == 0) {
+TSI.INVENTORY_CIATW = TSI.INVENTORY_CIATW - 1;
+
+        if (TSI.INVENTORY_CIATW == 0) {
             ciatwe.setEnabled(false);
-
-
         }
+  
     }//GEN-LAST:event_ciatweActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -564,15 +563,14 @@ public class POSScreenUser extends javax.swing.JFrame {
         
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "VBAB1", p.priceVBABo, price);
+        atbHelper.addToTable(model, "BIATW", p.priceBIATW, price);
        
- atbHelper.changeStock(TSI.STOCK_VBAB1, jButton3, TSI.INVENTORY_VBAB1);
+TSI.INVENTORY_BIATW = TSI.INVENTORY_BIATW - 1;
 
-  if (TSI.INVENTORY_VBAB1 == 0) {
+        if (TSI.INVENTORY_BIATW == 0) {
             jButton3.setEnabled(false);
-
-
         }
+
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -790,8 +788,12 @@ public class POSScreenUser extends javax.swing.JFrame {
         addToBillHelper atbHelper = new addToBillHelper();
 
         atbHelper.addToTable(model, "TGWTF", p.priceTGWTF, price);
-       
- atbHelper.changeStock(TSI.STOCK_TGWTF, jButton21, TSI.INVENTORY_TGWTF);        // TODO add your handling code here:
+              
+TSI.INVENTORY_TGWTF = TSI.INVENTORY_TGWTF - 1;
+
+        if (TSI.INVENTORY_TGWTF == 0) {
+            jButton21.setEnabled(false);
+        }
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
@@ -802,8 +804,12 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         atbHelper.addToTable(model, "CMM", p.priceCMM, price);
        
- atbHelper.changeStock(TSI.STOCK_CMM, jButton15, TSI.INVENTORY_CMM);
+       
+TSI.INVENTORY_CMM = TSI.INVENTORY_CMM - 1;
 
+        if (TSI.INVENTORY_CMM == 0) {
+            jButton15.setEnabled(false);
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton15ActionPerformed
 
@@ -815,7 +821,11 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         atbHelper.addToTable(model, "VBAB3", p.priceVBABth, price);
        
- atbHelper.changeStock(TSI.STOCK_VBAB3, jButton10, TSI.INVENTORY_VBAB3);
+TSI.INVENTORY_VBAB3 = TSI.INVENTORY_VBAB3 - 1;
+
+        if (TSI.INVENTORY_TIFY == 0) {
+            jButton10.setEnabled(false);
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
 
@@ -827,7 +837,11 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         atbHelper.addToTable(model, "TIFY", p.priceTIFU, price);
        
- atbHelper.changeStock(TSI.STOCK_TIFY, jButton9, TSI.INVENTORY_TIFY);
+   TSI.INVENTORY_TIFY = TSI.INVENTORY_TIFY - 1;
+
+        if (TSI.INVENTORY_TIFY == 0) {
+            jButton9.setEnabled(false);
+        } 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
@@ -838,8 +852,11 @@ public class POSScreenUser extends javax.swing.JFrame {
         addToBillHelper atbHelper = new addToBillHelper();
 
         atbHelper.addToTable(model, "TIFY2", p.priceTIFU2, price);
-       
- atbHelper.changeStock(TSI.STOCK_TIFY2, jButton20, TSI.INVENTORY_TIFY2);
+       TSI.INVENTORY_TIFY2 = TSI.INVENTORY_TIFY2 - 1;
+
+        if (TSI.INVENTORY_TIFY2 == 0) {
+            jButton20.setEnabled(false);
+        } 
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -850,8 +867,11 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         atbHelper.addToTable(model, "VBABSS", p.priceIIHU, price);
        
- atbHelper.changeStock(TSI.STOCK_IIHY, jButton7, TSI.INVENTORY_IIHY);
+TSI.INVENTORY_VBABSS = TSI.INVENTORY_VBABSS - 1;
 
+        if (TSI.INVENTORY_VBABSS == 0) {
+            jButton7.setEnabled(false);
+        } 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
@@ -860,14 +880,13 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "VBAB1", p.priceIIHU, price);
+        atbHelper.addToTable(model, "VBAB1", p.priceVBABo, price);
 
-        atbHelper.changeStock(TSI.STOCK_IIHY, jButton6, TSI.INVENTORY_IIHY);
-  if (TSI.INVENTORY_VBAB1 == 0) {
+TSI.INVENTORY_VBAB1 = TSI.INVENTORY_VBAB1 - 1;
+
+        if (TSI.INVENTORY_VBAB1 == 0) {
             jButton6.setEnabled(false);
-
-
-        }
+        }   
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
@@ -878,8 +897,11 @@ public class POSScreenUser extends javax.swing.JFrame {
         addToBillHelper atbHelper = new addToBillHelper();
 
         atbHelper.addToTable(model, "IIHY", p.priceIIHU, price);
-       
- atbHelper.changeStock(TSI.STOCK_IIHY, jButton18, TSI.INVENTORY_IIHY);
+        TSI.INVENTORY_IIHY = TSI.INVENTORY_IIHY - 1;
+
+        if (TSI.INVENTORY_IIHY == 0) {
+            jButton18.setEnabled(false);
+        }  
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
@@ -890,8 +912,11 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         atbHelper.addToTable(model, "VBAB2", p.priceVBABt, price);
        
- atbHelper.changeStock(TSI.STOCK_VBAB2, jButton19, TSI.INVENTORY_VBAB2);
-        // TODO add your handling code here:
+    TSI.INVENTORY_VBAB2 = TSI.INVENTORY_VBAB2 - 1;
+
+        if (TSI.INVENTORY_VBAB2 == 0) {
+            jButton19.setEnabled(false);
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
 
     /**
@@ -1029,6 +1054,9 @@ public class POSScreenUser extends javax.swing.JFrame {
 
     }
 
+    
+    
+    
     
     
     
