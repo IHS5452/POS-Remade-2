@@ -848,7 +848,7 @@ public class POSScreenUser extends javax.swing.JFrame {
         
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "IIHY", p.priceIIHU, price);
+        atbHelper.addToTable(model, "VBABSS", p.priceIIHU, price);
        
  atbHelper.changeStock(TSI.STOCK_IIHY, jButton7, TSI.INVENTORY_IIHY);
 
