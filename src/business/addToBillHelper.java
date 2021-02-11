@@ -35,15 +35,7 @@ public class addToBillHelper {
     
     }
     }
-    public void changeStock(int stock, javax.swing.JButton button, int booksSold) {
-
-        if (booksSold == 0) {
-            button.setEnabled(false);
-
-
-        }
-    
-    }
+   
 
     
     
