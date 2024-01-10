@@ -19,24 +19,18 @@ public class TSI {
 
     //stock
       public static int STOCK_TO_gen ;
-        public static int STOCK_TO_bookClub ;
                 public static int STOCK_TO_WithNovelette ;
                         public static int STOCK_TO_dustJacket ;
                         
 //the opportunity, part II and editions
-    public static int STOCK_TO2_general ;
-      public static int STOCK_TO2_dustJacket ;
-    public static int STOCK_TO2_bookClub ;
+    public static int STOCK_TMS ;
+    
 
     
-    
-    //The Girl with the fangs and editions    
-        public static int STOCK_TGWTF_paperback;
-        public static int STOCK_TGWTF_hardcover;
+
 
         //270 and editions
         public static int STOCK_270_paperback ;
-            public static int STOCK_270_hardcover ;
 
     //books without other editions
     public static int STOCK_TSLSMBODH ;
@@ -66,19 +60,14 @@ public class TSI {
                         public static int INVENTORY_TO_dustJacket ;
                         
 //the opportunity, part II and editions
-    public static int INVENTORY_TO2_general ;
-      public static int INVENTORY_TO2_dustJacket ;
-    public static int INVENTORY_TO2_bookClub ;
+    public static int INVENTORY_TMS;
+
 
     
-    
-    //The Girl with the fangs and editions    
-        public static int INVENTORY_TGWTF_paperback;
-        public static int INVENTORY_TGWTF_hardcover;
+
 
         //270 and editions
         public static int INVENTORY_270_paperback ;
-            public static int INVENTORY_270_hardcover ;
 
     //books without other editions
     public static int INVENTORY_TSLSMBODH ;
@@ -104,7 +93,7 @@ public class TSI {
     //books that are not released yet must be set to false
         public static Boolean MULTEDT_TO = true; // General paperback (P), Book Club Edition (P), Includes TSLSMBODH (H), Dust jacket (H) 
 
-    public static Boolean MULTEDT_TO2 = false; // General paperback (P), Dust jacket (H), Book Club Edition (P)
+    public static Boolean MULTEDT_TMS = false; // General paperback (P), Dust jacket (H), Book Club Edition (P)
     public static Boolean MULTEDT_TSLSMBODH = false;
     public static Boolean MULTEDT_VBAB1 = false;
     public static Boolean MULTEDT_VBAB2 = false;

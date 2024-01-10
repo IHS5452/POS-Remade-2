@@ -158,6 +158,19 @@
                                           <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="tsvty_p" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                          <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                      <Component id="tms_p" min="-2" pref="68" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -176,33 +189,8 @@
                                           <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                           <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                                  <Component id="tgwtf_p" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
-                                                  <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="toII_p" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="tslsmbodh_p" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="tsvty_p" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                                  <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                      </Group>
+                                      <Component id="tslsmbodh_p" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
+                                      <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -265,13 +253,13 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="to_p" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="toII_p" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="tslsmbodh_p" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                          <Component id="to_p" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tslsmbodh_p" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel11" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel14" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
@@ -307,14 +295,15 @@
                           </Group>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                          <Component id="tgwtf_p" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                          <Component id="tsvty_p" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="tsvty_p" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="tms_p" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <EmptySpace pref="44" max="32767" attributes="0"/>
@@ -383,10 +372,10 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
-            <Property name="text" type="java.lang.String" value="TO II"/>
+            <Property name="text" type="java.lang.String" value="TMS"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="toII_p">
+        <Component class="javax.swing.JTextField" name="tms_p">
           <Properties>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
@@ -439,16 +428,6 @@
         <Component class="javax.swing.JLabel" name="jLabel25">
           <Properties>
             <Property name="text" type="java.lang.String" value="TAW"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel13">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="TGWTF"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="tgwtf_p">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="tsvty_p">
@@ -582,6 +561,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="vbab123_h">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
@@ -592,6 +572,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="to_h">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
@@ -602,11 +583,13 @@
         </Component>
         <Component class="javax.swing.JTextField" name="toii_h">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="to_tslsmbodh_h">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
@@ -622,11 +605,13 @@
         </Component>
         <Component class="javax.swing.JTextField" name="tgwtf_h">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="tsvty_h">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
@@ -720,6 +705,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="vbab123_bc">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
@@ -730,6 +716,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="to_bc">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
@@ -740,6 +727,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="toii_bc">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>

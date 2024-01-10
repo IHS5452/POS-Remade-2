@@ -33,12 +33,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.beans.binding.StringBinding;
-import pos.remade.book_edition_popups.the_girl_with_the_fangs_edition;
-import pos.remade.book_edition_popups.the_opportunity_II_edition;
-import pos.remade.book_edition_popups.the_opportunity_edition;
-import pos.remade.book_edition_popups.twoseventy_edition;
-import utilites.checkForOtherEditions;
+
 
 /**
  *
@@ -67,26 +62,32 @@ public class POSScreenUser extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jScrollPane1 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
-        the_opportunity_button = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         price = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        custom = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
-        the_opportunity_II_button = new javax.swing.JButton();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        taw_bttn = new javax.swing.JButton();
+        the_opportunity_button = new javax.swing.JButton();
         TSLSMBODH_bttn = new javax.swing.JButton();
         vbab1_bttn = new javax.swing.JButton();
         vbab2_bttn = new javax.swing.JButton();
         vbab3_bttn = new javax.swing.JButton();
         vbab123_bttn = new javax.swing.JButton();
+        cmm1_bttn = new javax.swing.JButton();
         tseventy_bttn = new javax.swing.JButton();
         btv_bttn = new javax.swing.JButton();
-        cmm1_bttn = new javax.swing.JButton();
         cmm2_bttn = new javax.swing.JButton();
-        taw_bttn = new javax.swing.JButton();
-        tgwtf_bttn = new javax.swing.JButton();
+        trace_my_steps_button = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        custom = new javax.swing.JTextField();
+        jButton8 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        taw_bttn1 = new javax.swing.JButton();
+        taw_bttn2 = new javax.swing.JButton();
+        taw_bttn3 = new javax.swing.JButton();
+        taw_bttn4 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -127,14 +128,6 @@ public class POSScreenUser extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(table);
 
-        the_opportunity_button.setText("TO");
-        the_opportunity_button.setEnabled(false);
-        the_opportunity_button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                the_opportunity_buttonActionPerformed(evt);
-            }
-        });
-
         jButton17.setText("Delete");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,21 +144,6 @@ public class POSScreenUser extends javax.swing.JFrame {
             }
         });
 
-        jButton8.setText("Add to total");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setText("Custom price");
-
-        custom.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customActionPerformed(evt);
-            }
-        });
-
         jButton5.setText("FPK");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,11 +151,19 @@ public class POSScreenUser extends javax.swing.JFrame {
             }
         });
 
-        the_opportunity_II_button.setText("TO II");
-        the_opportunity_II_button.setEnabled(false);
-        the_opportunity_II_button.addActionListener(new java.awt.event.ActionListener() {
+        taw_bttn.setText("TAW");
+        taw_bttn.setEnabled(false);
+        taw_bttn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                the_opportunity_II_buttonActionPerformed(evt);
+                taw_bttnActionPerformed(evt);
+            }
+        });
+
+        the_opportunity_button.setText("TO");
+        the_opportunity_button.setEnabled(false);
+        the_opportunity_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                the_opportunity_buttonActionPerformed(evt);
             }
         });
 
@@ -221,6 +207,14 @@ public class POSScreenUser extends javax.swing.JFrame {
             }
         });
 
+        cmm1_bttn.setText("CMM1");
+        cmm1_bttn.setEnabled(false);
+        cmm1_bttn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmm1_bttnActionPerformed(evt);
+            }
+        });
+
         tseventy_bttn.setText("270");
         tseventy_bttn.setEnabled(false);
         tseventy_bttn.addActionListener(new java.awt.event.ActionListener() {
@@ -237,14 +231,6 @@ public class POSScreenUser extends javax.swing.JFrame {
             }
         });
 
-        cmm1_bttn.setText("CMM1");
-        cmm1_bttn.setEnabled(false);
-        cmm1_bttn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmm1_bttnActionPerformed(evt);
-            }
-        });
-
         cmm2_bttn.setText("CMM2");
         cmm2_bttn.setEnabled(false);
         cmm2_bttn.addActionListener(new java.awt.event.ActionListener() {
@@ -253,25 +239,164 @@ public class POSScreenUser extends javax.swing.JFrame {
             }
         });
 
-        taw_bttn.setText("TAW");
-        taw_bttn.setEnabled(false);
-        taw_bttn.addActionListener(new java.awt.event.ActionListener() {
+        trace_my_steps_button.setText("TMS");
+        trace_my_steps_button.setEnabled(false);
+        trace_my_steps_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                taw_bttnActionPerformed(evt);
+                trace_my_steps_buttonActionPerformed(evt);
             }
         });
 
-        tgwtf_bttn.setText("TGWTF");
-        tgwtf_bttn.setEnabled(false);
-        tgwtf_bttn.addActionListener(new java.awt.event.ActionListener() {
+        jLabel1.setText("Custom price");
+
+        custom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tgwtf_bttnActionPerformed(evt);
+                customActionPerformed(evt);
             }
         });
+
+        jButton8.setText("Add to total");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(taw_bttn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(the_opportunity_button)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(TSLSMBODH_bttn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(trace_my_steps_button))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(vbab1_bttn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(vbab2_bttn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(vbab3_bttn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(vbab123_bttn))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(cmm1_bttn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cmm2_bttn)
+                        .addGap(7, 7, 7)
+                        .addComponent(tseventy_bttn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btv_bttn)))
+                .addContainerGap(180, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(custom, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton8)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(taw_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(the_opportunity_button, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TSLSMBODH_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(trace_my_steps_button, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(vbab1_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(vbab2_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(vbab3_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(vbab123_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cmm1_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tseventy_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btv_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmm2_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(custom, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton8))
+                .addContainerGap())
+        );
+
+        jTabbedPane1.addTab("Paperback", jPanel1);
+
+        taw_bttn1.setText("VBAB123");
+        taw_bttn1.setEnabled(false);
+        taw_bttn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                taw_bttn1ActionPerformed(evt);
+            }
+        });
+
+        taw_bttn2.setText("TAW");
+        taw_bttn2.setEnabled(false);
+        taw_bttn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                taw_bttn2ActionPerformed(evt);
+            }
+        });
+
+        taw_bttn3.setText("TO (DJ)");
+        taw_bttn3.setEnabled(false);
+        taw_bttn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                taw_bttn3ActionPerformed(evt);
+            }
+        });
+
+        taw_bttn4.setText("TO / TSLSMBODH");
+        taw_bttn4.setEnabled(false);
+        taw_bttn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                taw_bttn4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(taw_bttn2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(taw_bttn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(taw_bttn3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(taw_bttn4)
+                .addContainerGap(125, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(taw_bttn1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(taw_bttn2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(taw_bttn3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(taw_bttn4, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(340, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Hardcover", jPanel2);
 
         jMenu2.setText("File");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem1.setText("Admin menu (BETA)");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -289,7 +414,7 @@ public class POSScreenUser extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem2);
 
-        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem4.setText("(NOT FINISHED) Finalize event");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -318,7 +443,7 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         jMenu3.setText("Discounts list");
 
-        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem3.setText("100%");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -336,48 +461,9 @@ public class POSScreenUser extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addComponent(the_opportunity_button)
-                                .addGap(20, 20, 20))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btv_bttn)
-                                    .addComponent(vbab1_bttn)
-                                    .addComponent(cmm1_bttn))
-                                .addGap(16, 16, 16)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(vbab2_bttn)
-                                    .addComponent(the_opportunity_II_button))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(vbab3_bttn)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(vbab123_bttn))
-                                    .addComponent(TSLSMBODH_bttn)))
-                            .addComponent(cmm2_bttn)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(custom, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton8))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(taw_bttn)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(tgwtf_bttn)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(tseventy_bttn)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 528, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -389,54 +475,30 @@ public class POSScreenUser extends javax.swing.JFrame {
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addContainerGap()))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
                         .addComponent(jButton17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton5)
-                        .addGap(16, 16, 16))))
+                        .addGap(24, 24, 24))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton4)
                             .addComponent(price, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(the_opportunity_button, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(the_opportunity_II_button, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TSLSMBODH_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(vbab1_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(vbab3_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(vbab2_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(vbab123_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmm1_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cmm2_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(tseventy_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tgwtf_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btv_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(taw_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(82, 82, 82)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton17)
-                    .addComponent(jButton5)
-                    .addComponent(custom, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
-                    .addComponent(jButton8))
-                .addGap(0, 2, Short.MAX_VALUE))
+                            .addComponent(jButton17)
+                            .addComponent(jButton5))))
+                .addGap(0, 10, Short.MAX_VALUE))
         );
 
         pack();
@@ -484,9 +546,7 @@ public class POSScreenUser extends javax.swing.JFrame {
             case "TO-hardcover":
            deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO_dustJacket, TSI.STOCK_TO_dustJacket, null, price);
 break;
-            case "TO-bookClub":
-          deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO_bookClub, TSI.STOCK_TO_bookClub, null, price);
-break;
+     
                  //add deletehelper
 
             case "TO-TSLSMBODH":
@@ -497,15 +557,10 @@ break;
                     deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO_gen, TSI.STOCK_TO_gen, the_opportunity_button, price);
               break;
 
-            case "TOII-bookClub":
-                   deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO2_bookClub, TSI.STOCK_TO2_bookClub, null, price);
+            case "TMS":
+                   deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TMS, TSI.STOCK_TMS, null, price);
 break;
-            case "TOII-hardcover":
-                   deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO2_dustJacket, TSI.STOCK_TO2_dustJacket, null, price);
-               break;   
-            case "TOII-paperback":
-                   deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO2_general, TSI.STOCK_TO2_general, the_opportunity_II_button, price);
-              break;
+            
 
             case "VBAB1":
             deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_VBAB1, TSI.STOCK_VBAB1, vbab1_bttn, price);
@@ -528,20 +583,12 @@ break;
             deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_CMM2, TSI.STOCK_CMM2, cmm2_bttn, price);
               break;
 
-            case "TGWTF-paperback":
-                                deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TGWTF_paperback, TSI.STOCK_TGWTF_paperback, tgwtf_bttn, price);
-break;
-            case "TGWTF-hardcover":
-
-                deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TGWTF_hardcover, TSI.STOCK_TGWTF_hardcover, null, price);
-              break;
+       
 
            case "270-paperback":
               deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_270_paperback, TSI.STOCK_270_paperback, tseventy_bttn, price);
               break;
-          case "270-hardcover":
-              deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_270_hardcover, TSI.STOCK_270_hardcover, tseventy_bttn, price);
-              break;
+        
               
               
                 case "TAW":
@@ -701,15 +748,13 @@ break;
 //                    checkForStockHelper.checkForStock(TSI.INVENTORY_TO_dustJacket , XXX);
                         
 //the opportunity, part II and editions
-checkForStockHelper.checkForStock(TSI.INVENTORY_TO2_general , the_opportunity_button);
+checkForStockHelper.checkForStock(TSI.INVENTORY_TMS , trace_my_steps_button);
 //  checkForStockHelper.checkForStock(TSI.INVENTORY_TO2_dustJacket , XXX);
 //checkForStockHelper.checkForStock(TSI.INVENTORY_TO2_bookClub , XXX);
 
     
     
-    //The Girl with the fangs and editions    
-    checkForStockHelper.checkForStock(TSI.INVENTORY_TGWTF_paperback, tgwtf_bttn);
-//    checkForStockHelper.checkForStock(TSI.INVENTORY_TGWTF_hardcover, XXX);
+
 
         //270 and editions
     checkForStockHelper.checkForStock(TSI.INVENTORY_270_paperback , tseventy_bttn);
@@ -803,12 +848,7 @@ checkForStockHelper.checkForStock(TSI.INVENTORY_BTV, btv_bttn);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void the_opportunity_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_the_opportunity_buttonActionPerformed
-        Boolean areThereOtherEditions = checkForOtherEditions.TheOpportuntiy();
-        
-        if (areThereOtherEditions = true) {
-          new the_opportunity_edition().setVisible(true);
 
-        }else {
             
         
         
@@ -824,35 +864,29 @@ TSI.INVENTORY_TO_gen = TSI.INVENTORY_TO_gen - 1;
         if (TSI.INVENTORY_TO_gen == 0) {
             the_opportunity_button.setEnabled(false);
         }   
-        }
+        
         
         // TODO add your handling code here:
     }//GEN-LAST:event_the_opportunity_buttonActionPerformed
 
-    private void the_opportunity_II_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_the_opportunity_II_buttonActionPerformed
-  Boolean areThereOtherEditions = checkForOtherEditions.TheOpportuntiyII();
+    private void trace_my_steps_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trace_my_steps_buttonActionPerformed
         
-        if (areThereOtherEditions = true) {
-                new the_opportunity_II_edition().setVisible(true);
 
-        }else {
-            
-        
         
         
         DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "TOII-paperback", p.PRICE_TO2_general, price);
+        atbHelper.addToTable(model, "TMS", p.PRICE_TMS, price);
 
-TSI.INVENTORY_TO2_general = TSI.INVENTORY_TO2_general - 1;
+TSI.INVENTORY_TMS = TSI.INVENTORY_TMS - 1;
 
-        if (TSI.INVENTORY_TO2_general == 0) {
-            the_opportunity_II_button.setEnabled(false);
+        if (TSI.INVENTORY_TMS == 0) {
+            trace_my_steps_button.setEnabled(false);
         }   
-        }        // TODO add your handling code here:
-    }//GEN-LAST:event_the_opportunity_II_buttonActionPerformed
+                // TODO add your handling code here:
+    }//GEN-LAST:event_trace_my_steps_buttonActionPerformed
 
     private void TSLSMBODH_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TSLSMBODH_bttnActionPerformed
 
@@ -928,12 +962,8 @@ TSI.INVENTORY_VBAB123 = TSI.INVENTORY_VBAB123 - 1;
     }//GEN-LAST:event_vbab123_bttnActionPerformed
 
     private void tseventy_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tseventy_bttnActionPerformed
-Boolean areThereOtherEditions = checkForOtherEditions.twoseventy();
         
-        if (areThereOtherEditions = true) {
-          new twoseventy_edition().setVisible(true);
-
-        }else {
+        
             
         
         
@@ -949,7 +979,7 @@ TSI.INVENTORY_270_paperback = TSI.INVENTORY_270_paperback - 1;
         if (TSI.INVENTORY_270_paperback == 0) {
             tseventy_bttn.setEnabled(false);
         }   
-        }           // TODO add your handling code here:
+                   // TODO add your handling code here:
     }//GEN-LAST:event_tseventy_bttnActionPerformed
 
     private void btv_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btv_bttnActionPerformed
@@ -1008,30 +1038,21 @@ TSI.INVENTORY_TAW = TSI.INVENTORY_TAW - 1;
         }            // TODO add your handling code here:
     }//GEN-LAST:event_taw_bttnActionPerformed
 
-    private void tgwtf_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tgwtf_bttnActionPerformed
-Boolean areThereOtherEditions = checkForOtherEditions.TheGirlWithTheFangs();
-        
-        if (areThereOtherEditions = true) {
-          new the_girl_with_the_fangs_edition().setVisible(true);
+    private void taw_bttn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taw_bttn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_taw_bttn1ActionPerformed
 
-        }else {
-            
-        
-        
-        
-        DefaultTableModel model = (DefaultTableModel) table.getModel();
+    private void taw_bttn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taw_bttn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_taw_bttn2ActionPerformed
 
-        addToBillHelper atbHelper = new addToBillHelper();
+    private void taw_bttn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taw_bttn3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_taw_bttn3ActionPerformed
 
-        atbHelper.addToTable(model, "TGWTF-paperback", p.PRICE_TGWTF_paperback, price);
-
-TSI.INVENTORY_TGWTF_paperback = TSI.INVENTORY_TGWTF_paperback - 1;
-
-        if (TSI.INVENTORY_TGWTF_paperback == 0) {
-            tgwtf_bttn.setEnabled(false);
-        }   
-        }        // TODO add your handling code here:
-    }//GEN-LAST:event_tgwtf_bttnActionPerformed
+    private void taw_bttn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taw_bttn4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_taw_bttn4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1093,13 +1114,19 @@ TSI.INVENTORY_TGWTF_paperback = TSI.INVENTORY_TGWTF_paperback - 1;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTabbedPane jTabbedPane1;
     public javax.swing.JLabel price;
     public static javax.swing.JTable table;
     private javax.swing.JButton taw_bttn;
-    private javax.swing.JButton tgwtf_bttn;
-    private javax.swing.JButton the_opportunity_II_button;
+    private javax.swing.JButton taw_bttn1;
+    private javax.swing.JButton taw_bttn2;
+    private javax.swing.JButton taw_bttn3;
+    private javax.swing.JButton taw_bttn4;
     private javax.swing.JButton the_opportunity_button;
+    private javax.swing.JButton trace_my_steps_button;
     private javax.swing.JButton tseventy_bttn;
     private javax.swing.JButton vbab123_bttn;
     private javax.swing.JButton vbab1_bttn;

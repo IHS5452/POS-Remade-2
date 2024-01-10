@@ -60,7 +60,7 @@ public class inventory extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         to_p = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        toII_p = new javax.swing.JTextField();
+        tms_p = new javax.swing.JTextField();
         tslsmbodh_p = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         cmm1_p = new javax.swing.JTextField();
@@ -71,8 +71,6 @@ public class inventory extends javax.swing.JFrame {
         btv_p = new javax.swing.JTextField();
         taw_p = new javax.swing.JTextField();
         jLabel25 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        tgwtf_p = new javax.swing.JTextField();
         tsvty_p = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -148,9 +146,9 @@ public class inventory extends javax.swing.JFrame {
 
         to_p.setText("0");
 
-        jLabel11.setText("TO II");
+        jLabel11.setText("TMS");
 
-        toII_p.setText("0");
+        tms_p.setText("0");
 
         tslsmbodh_p.setText("0");
 
@@ -171,10 +169,6 @@ public class inventory extends javax.swing.JFrame {
         taw_p.setText("0");
 
         jLabel25.setText("TAW");
-
-        jLabel13.setText("TGWTF");
-
-        tgwtf_p.setText("0");
 
         tsvty_p.setText("0");
 
@@ -203,7 +197,17 @@ public class inventory extends javax.swing.JFrame {
                                     .addComponent(btv_p, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(6, 6, 6)
-                                        .addComponent(jLabel24))))
+                                        .addComponent(jLabel24)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(tsvty_p, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(6, 6, 6)
+                                        .addComponent(jLabel20)))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11)
+                                    .addComponent(tms_p, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel9)
@@ -218,25 +222,8 @@ public class inventory extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(6, 6, 6)
                                         .addComponent(jLabel23))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(tgwtf_p, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jLabel13))
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel11)
-                                                    .addComponent(toII_p, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel14)
-                                                    .addComponent(tslsmbodh_p, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(tsvty_p, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(6, 6, 6)
-                                                .addComponent(jLabel20))))))
+                                    .addComponent(tslsmbodh_p, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel14)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel5)
@@ -281,13 +268,12 @@ public class inventory extends javax.swing.JFrame {
                         .addComponent(vbab123_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(to_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(toII_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tslsmbodh_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(to_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(tslsmbodh_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel9)
-                            .addComponent(jLabel11)
                             .addComponent(jLabel14))
                         .addGap(28, 28, 28)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -313,13 +299,13 @@ public class inventory extends javax.swing.JFrame {
                                 .addGap(8, 8, 8)
                                 .addComponent(btv_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel13)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel11))
                         .addGap(8, 8, 8)
-                        .addComponent(tgwtf_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel20)
-                        .addGap(8, 8, 8)
-                        .addComponent(tsvty_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tsvty_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tms_p, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(44, Short.MAX_VALUE))
         );
 
@@ -330,24 +316,30 @@ public class inventory extends javax.swing.JFrame {
 
         jLabel27.setText("VBAB123");
 
+        vbab123_h.setEditable(false);
         vbab123_h.setText("0");
 
         jLabel28.setText("TO_DJ");
 
+        to_h.setEditable(false);
         to_h.setText("0");
 
         jLabel29.setText("TO II");
 
+        toii_h.setEditable(false);
         toii_h.setText("0");
 
+        to_tslsmbodh_h.setEditable(false);
         to_tslsmbodh_h.setText("0");
 
         jLabel30.setText("TO & TSLSMBODH");
 
         jLabel35.setText("TGWTF");
 
+        tgwtf_h.setEditable(false);
         tgwtf_h.setText("0");
 
+        tsvty_h.setEditable(false);
         tsvty_h.setText("0");
 
         jLabel36.setText("270");
@@ -432,14 +424,17 @@ public class inventory extends javax.swing.JFrame {
 
         jLabel31.setText("VBAB123_BC");
 
+        vbab123_bc.setEditable(false);
         vbab123_bc.setText("0");
 
         jLabel32.setText("TO_BC");
 
+        to_bc.setEditable(false);
         to_bc.setText("0");
 
         jLabel33.setText("TO II_BC");
 
+        toii_bc.setEditable(false);
         toii_bc.setText("0");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -557,17 +552,12 @@ static int setoff;
                 TSI.INVENTORY_TO_WithNovelette  = Integer.parseInt(to_tslsmbodh_h.getText());
                         TSI.INVENTORY_TO_dustJacket  = Integer.parseInt(to_h.getText());
                         
-    TSI.INVENTORY_TO2_general  = Integer.parseInt(toII_p.getText());
-      TSI.INVENTORY_TO2_dustJacket  = Integer.parseInt(toii_h.getText());
-    TSI.INVENTORY_TO2_bookClub  = Integer.parseInt(toii_bc.getText());
+    TSI.INVENTORY_TMS  = Integer.parseInt(tms_p.getText());
 
     
     
-        TSI.INVENTORY_TGWTF_paperback = Integer.parseInt(tgwtf_p.getText());
-        TSI.INVENTORY_TGWTF_hardcover = Integer.parseInt(tgwtf_h.getText());
 
         TSI.INVENTORY_270_paperback  = Integer.parseInt(tsvty_p.getText());
-            TSI.INVENTORY_270_hardcover  = Integer.parseInt(tsvty_h.getText());
 
     TSI.INVENTORY_TSLSMBODH  = Integer.parseInt(tslsmbodh_p.getText());
     TSI.INVENTORY_VBAB1  = Integer.parseInt(vbab1_p.getText());
@@ -723,7 +713,6 @@ JOptionPane.showMessageDialog(frame, "Update complete! Have fun!");
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
@@ -754,8 +743,7 @@ JOptionPane.showMessageDialog(frame, "Update complete! Have fun!");
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField taw_p;
     private javax.swing.JTextField tgwtf_h;
-    private javax.swing.JTextField tgwtf_p;
-    private javax.swing.JTextField toII_p;
+    private javax.swing.JTextField tms_p;
     private javax.swing.JTextField to_bc;
     private javax.swing.JTextField to_h;
     private javax.swing.JTextField to_p;
