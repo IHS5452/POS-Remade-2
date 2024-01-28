@@ -84,7 +84,7 @@ public class POSScreenUser extends javax.swing.JFrame {
         custom = new javax.swing.JTextField();
         jButton8 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        taw_bttn1 = new javax.swing.JButton();
+        vbab123h_bttn = new javax.swing.JButton();
         taw_bttn2 = new javax.swing.JButton();
         taw_bttn3 = new javax.swing.JButton();
         taw_bttn4 = new javax.swing.JButton();
@@ -102,11 +102,11 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowOpened(java.awt.event.WindowEvent evt) {
-                formWindowOpened(evt);
-            }
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 formWindowActivated(evt);
+            }
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
             }
         });
 
@@ -333,11 +333,11 @@ public class POSScreenUser extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Paperback", jPanel1);
 
-        taw_bttn1.setText("VBAB123");
-        taw_bttn1.setEnabled(false);
-        taw_bttn1.addActionListener(new java.awt.event.ActionListener() {
+        vbab123h_bttn.setText("VBAB123");
+        vbab123h_bttn.setEnabled(false);
+        vbab123h_bttn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                taw_bttn1ActionPerformed(evt);
+                vbab123h_bttnActionPerformed(evt);
             }
         });
 
@@ -373,7 +373,7 @@ public class POSScreenUser extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(taw_bttn2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(taw_bttn1)
+                .addComponent(vbab123h_bttn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(taw_bttn3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -385,7 +385,7 @@ public class POSScreenUser extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(taw_bttn1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(vbab123h_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(taw_bttn2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(taw_bttn3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(taw_bttn4, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -543,16 +543,13 @@ public class POSScreenUser extends javax.swing.JFrame {
         
 
         switch (table.getModel().getValueAt(row, 0).toString()) {
-            case "TO-hardcover":
-           deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO_dustJacket, TSI.STOCK_TO_dustJacket, null, price);
+            case "VBAB123_H": //change to hardback vbab123
+           deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_H_VBAB123, TSI.STOCK_H_VBAB123, null, price);
 break;
      
                  //add deletehelper
 
-            case "TO-TSLSMBODH":
-               deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO_WithNovelette, TSI.STOCK_TO_WithNovelette, null, price);
-
-break;
+        
             case "TO-paperback":
                     deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO_gen, TSI.STOCK_TO_gen, the_opportunity_button, price);
               break;
@@ -774,7 +771,8 @@ checkForStockHelper.checkForStock(TSI.INVENTORY_CMM2 , cmm2_bttn);
 checkForStockHelper.checkForStock(TSI.INVENTORY_TAW , taw_bttn);
 checkForStockHelper.checkForStock(TSI.INVENTORY_BTV, btv_bttn);
 
-    
+    checkForStockHelper.checkForStock(TSI.INVENTORY_H_VBAB123, vbab123h_bttn);
+
 
         
     }//GEN-LAST:event_formWindowOpened
@@ -952,7 +950,7 @@ DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "VBAB123", p.PRICE_VBAB123, price);
+        atbHelper.addToTable(model, "VBAB123_H", p.PRICE_VBAB123, price);
 
 TSI.INVENTORY_VBAB123 = TSI.INVENTORY_VBAB123 - 1;
 
@@ -1001,12 +999,12 @@ DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "CMM1", p.PRICE_BTV, price);
+        atbHelper.addToTable(model, "CMM1", p.PRICE_CMM1, price);
 
-TSI.INVENTORY_BTV = TSI.INVENTORY_BTV - 1;
+TSI.INVENTORY_CMM1 = TSI.INVENTORY_CMM1 - 1;
 
-        if (TSI.INVENTORY_BTV == 0) {
-           btv_bttn.setEnabled(false);
+        if (TSI.INVENTORY_CMM1 == 0) {
+           cmm1_bttn.setEnabled(false);
         }         // TODO add your handling code here:
     }//GEN-LAST:event_cmm1_bttnActionPerformed
 
@@ -1038,9 +1036,21 @@ TSI.INVENTORY_TAW = TSI.INVENTORY_TAW - 1;
         }            // TODO add your handling code here:
     }//GEN-LAST:event_taw_bttnActionPerformed
 
-    private void taw_bttn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taw_bttn1ActionPerformed
+    private void vbab123h_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vbab123h_bttnActionPerformed
+DefaultTableModel model = (DefaultTableModel) table.getModel();
+
+        addToBillHelper atbHelper = new addToBillHelper();
+
+        atbHelper.addToTable(model, "VBAB123-H", p.PRICE_H_VBAB123, price);
+
+TSI.INVENTORY_H_VBAB123 = TSI.INVENTORY_H_VBAB123 - 1;
+
+        if (TSI.INVENTORY_H_VBAB123 == 0) {
+          vbab123h_bttn.setEnabled(false);
+        }    
+
         // TODO add your handling code here:
-    }//GEN-LAST:event_taw_bttn1ActionPerformed
+    }//GEN-LAST:event_vbab123h_bttnActionPerformed
 
     private void taw_bttn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taw_bttn2ActionPerformed
         // TODO add your handling code here:
@@ -1121,7 +1131,6 @@ TSI.INVENTORY_TAW = TSI.INVENTORY_TAW - 1;
     public javax.swing.JLabel price;
     public static javax.swing.JTable table;
     private javax.swing.JButton taw_bttn;
-    private javax.swing.JButton taw_bttn1;
     private javax.swing.JButton taw_bttn2;
     private javax.swing.JButton taw_bttn3;
     private javax.swing.JButton taw_bttn4;
@@ -1129,6 +1138,7 @@ TSI.INVENTORY_TAW = TSI.INVENTORY_TAW - 1;
     private javax.swing.JButton trace_my_steps_button;
     private javax.swing.JButton tseventy_bttn;
     private javax.swing.JButton vbab123_bttn;
+    private javax.swing.JButton vbab123h_bttn;
     private javax.swing.JButton vbab1_bttn;
     private javax.swing.JButton vbab2_bttn;
     private javax.swing.JButton vbab3_bttn;

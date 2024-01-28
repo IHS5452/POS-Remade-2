@@ -17,34 +17,36 @@ public class TSI {
     
         //*************************************************
 
-    //stock
+    //The Opportunity
       public static int STOCK_TO_gen ;
-                public static int STOCK_TO_WithNovelette ;
                         public static int STOCK_TO_dustJacket ;
-                        
-//the opportunity, part II and editions
-    public static int STOCK_TMS ;
     
 
     
 
 
-        //270 and editions
+        //270
         public static int STOCK_270_paperback ;
 
-    //books without other editions
+    //Vacillation Saga: Tammy
     public static int STOCK_TSLSMBODH ;
     public static int STOCK_VBAB1 ;
     public static int STOCK_VBAB2 ;
     public static int STOCK_VBAB3 ;
     public static int STOCK_VBAB123 ;
+    public static int STOCK_H_VBAB123;
     
+    
+    //vacillation saga: justin
     public static int STOCK_CMM1 ;
     public static int STOCK_CMM2 ;
 
 
+    //standalone
     public static int STOCK_TAW ;
     public static int STOCK_BTV;
+         public static int STOCK_TMS ;
+
 
     
     //*************************************************
@@ -55,12 +57,10 @@ public class TSI {
     
     //the opportuntiy and editions
     public static int INVENTORY_TO_gen ;
-        public static int INVENTORY_TO_bookClub ;
-                public static int INVENTORY_TO_WithNovelette ;
-                        public static int INVENTORY_TO_dustJacket ;
-                        
-//the opportunity, part II and editions
-    public static int INVENTORY_TMS;
+    public static int INVENTORY_TO_dustJacket ;
+
+   
+    public static int INVENTORY_H_VBAB123;
 
 
     
@@ -82,31 +82,13 @@ public class TSI {
 
     public static int INVENTORY_TAW ;
     public static int INVENTORY_BTV;
+     public static int INVENTORY_TMS;
     
     
     //*************************************************
 
     
-    //Boolean if book is able to have multiple editions
-    
-    
-    //books that are not released yet must be set to false
-        public static Boolean MULTEDT_TO = true; // General paperback (P), Book Club Edition (P), Includes TSLSMBODH (H), Dust jacket (H) 
-
-    public static Boolean MULTEDT_TMS = false; // General paperback (P), Dust jacket (H), Book Club Edition (P)
-    public static Boolean MULTEDT_TSLSMBODH = false;
-    public static Boolean MULTEDT_VBAB1 = false;
-    public static Boolean MULTEDT_VBAB2 = false;
-    public static Boolean MULTEDT_VBAB3 = false;
-    public static Boolean MULTEDT_VBAB123 = true;
-    
-    public static Boolean MULTEDT_CMM1 = false;
-    public static Boolean MULTEDT_CMM2 = false;
-
-    public static Boolean MULTEDT_TGWTF = true; //general paperback (P), dust jacket (H)
-    public static Boolean MULTEDT_TAW = false; 
-    public static Boolean MULTEDT_BTV = false;
-    public static Boolean MULTEDT_270 = true; //general paperback (P), dust jacket (H)
+ 
 
     
 }

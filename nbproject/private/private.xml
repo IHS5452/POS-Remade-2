@@ -3,17 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/utilites/format.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/pos/remade/reprint.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/business/deleteHelper.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/business/addToBillHelper.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/business/TSI.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/pos/remade/clearTable.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/pos/remade/POSScreenUser.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/pos/remade/prices.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/pos/remade/book_edition_popups/preview_book_info.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/pos/remade/inventory.java</file>
-            <file>file:/Users/ianschrauth/NetBeansProjects/POS-Remade-2/src/pos/remade/adminMenu.java</file>
+            <file>file:/Users/ianschrauth/Documents/GitHub/POS-Remade-2/src/business/TSI.java</file>
+            <file>file:/Users/ianschrauth/Documents/GitHub/POS-Remade-2/src/pos/remade/reprint.java</file>
+            <file>file:/Users/ianschrauth/Documents/GitHub/POS-Remade-2/src/pos/remade/inventory.java</file>
+            <file>file:/Users/ianschrauth/Documents/GitHub/POS-Remade-2/src/pos/remade/startscreen.java</file>
+            <file>file:/Users/ianschrauth/Documents/GitHub/POS-Remade-2/src/pos/remade/prices.java</file>
+            <file>file:/Users/ianschrauth/Documents/GitHub/POS-Remade-2/src/pos/remade/clearTable.java</file>
+            <file>file:/Users/ianschrauth/Documents/GitHub/POS-Remade-2/src/pos/remade/POSScreenUser.java</file>
         </group>
     </open-files>
 </project-private>

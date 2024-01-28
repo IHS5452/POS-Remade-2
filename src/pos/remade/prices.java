@@ -38,7 +38,7 @@ public class prices {
 
     
     //hardcover
-                      public static double PRICE_TO_WithNovelette = 11.99;
+                      public static double PRICE_H_VBAB123 = 11.99;
                         public static double PRICE_TO_dustJacket = 15.99;
 
       

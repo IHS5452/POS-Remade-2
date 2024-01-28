@@ -99,8 +99,8 @@
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <Events>
-    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
     <EventHandler event="windowActivated" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowActivated"/>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
   </Events>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -486,7 +486,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="taw_bttn2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="taw_bttn1" min="-2" max="-2" attributes="0"/>
+                      <Component id="vbab123h_bttn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="taw_bttn3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -500,7 +500,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="taw_bttn1" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
+                          <Component id="vbab123h_bttn" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
                           <Component id="taw_bttn2" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
                           <Component id="taw_bttn3" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
                           <Component id="taw_bttn4" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
@@ -511,13 +511,13 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="taw_bttn1">
+            <Component class="javax.swing.JButton" name="vbab123h_bttn">
               <Properties>
                 <Property name="text" type="java.lang.String" value="VBAB123"/>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="taw_bttn1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vbab123h_bttnActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="taw_bttn2">
