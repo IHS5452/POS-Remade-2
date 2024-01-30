@@ -35,11 +35,14 @@ public class prices {
 
     public static double PRICE_TAW = 7.99;
     public static double PRICE_BTV = 6.99;
-
+  public static double PRICE_TIFY = 8.99;
+    public static double PRICE_FFUL1 = 8.99;
+    public static double PRICE_FFUL2 = 8.99;
     
     //hardcover
                       public static double PRICE_H_VBAB123 = 11.99;
                         public static double PRICE_TO_dustJacket = 15.99;
+                        public static double PRICE_SLMPD =7.99;
 
       
       

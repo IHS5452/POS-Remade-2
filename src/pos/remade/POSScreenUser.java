@@ -76,18 +76,19 @@ public class POSScreenUser extends javax.swing.JFrame {
         vbab3_bttn = new javax.swing.JButton();
         vbab123_bttn = new javax.swing.JButton();
         cmm1_bttn = new javax.swing.JButton();
-        tseventy_bttn = new javax.swing.JButton();
-        btv_bttn = new javax.swing.JButton();
         cmm2_bttn = new javax.swing.JButton();
         trace_my_steps_button = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         custom = new javax.swing.JTextField();
         jButton8 = new javax.swing.JButton();
+        fful1_bttn1 = new javax.swing.JButton();
+        tify_bttn = new javax.swing.JButton();
+        fful2_bttn2 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        vbab123h_bttn = new javax.swing.JButton();
-        taw_bttn2 = new javax.swing.JButton();
-        taw_bttn3 = new javax.swing.JButton();
-        taw_bttn4 = new javax.swing.JButton();
+        BTV_bttn2 = new javax.swing.JButton();
+        tseventy_bttn = new javax.swing.JButton();
+        tms_bttn = new javax.swing.JButton();
+        SLMPD_bttn = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -215,22 +216,6 @@ public class POSScreenUser extends javax.swing.JFrame {
             }
         });
 
-        tseventy_bttn.setText("270");
-        tseventy_bttn.setEnabled(false);
-        tseventy_bttn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tseventy_bttnActionPerformed(evt);
-            }
-        });
-
-        btv_bttn.setText("BTV");
-        btv_bttn.setEnabled(false);
-        btv_bttn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btv_bttnActionPerformed(evt);
-            }
-        });
-
         cmm2_bttn.setText("CMM2");
         cmm2_bttn.setEnabled(false);
         cmm2_bttn.addActionListener(new java.awt.event.ActionListener() {
@@ -239,7 +224,7 @@ public class POSScreenUser extends javax.swing.JFrame {
             }
         });
 
-        trace_my_steps_button.setText("TMS");
+        trace_my_steps_button.setText("VBAB123 - H");
         trace_my_steps_button.setEnabled(false);
         trace_my_steps_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -262,21 +247,42 @@ public class POSScreenUser extends javax.swing.JFrame {
             }
         });
 
+        fful1_bttn1.setText("FFUL1");
+        fful1_bttn1.setEnabled(false);
+        fful1_bttn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fful1_bttn1ActionPerformed(evt);
+            }
+        });
+
+        tify_bttn.setText("TIFY");
+        tify_bttn.setEnabled(false);
+        tify_bttn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tify_bttnActionPerformed(evt);
+            }
+        });
+
+        fful2_bttn2.setText("FFUL2");
+        fful2_bttn2.setEnabled(false);
+        fful2_bttn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fful2_bttn2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(taw_bttn)
+                        .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(the_opportunity_button)
+                        .addComponent(custom, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TSLSMBODH_bttn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(trace_my_steps_button))
+                        .addComponent(jButton8))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(vbab1_bttn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -284,45 +290,52 @@ public class POSScreenUser extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(vbab3_bttn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(vbab123_bttn))
+                        .addComponent(vbab123_bttn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(trace_my_steps_button))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(cmm1_bttn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cmm2_bttn)
-                        .addGap(7, 7, 7)
-                        .addComponent(tseventy_bttn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tify_bttn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btv_bttn)))
-                .addContainerGap(180, Short.MAX_VALUE))
+                        .addComponent(fful1_bttn1)
+                        .addGap(18, 18, 18)
+                        .addComponent(fful2_bttn2)))
+                .addGap(0, 90, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1)
+                .addContainerGap()
+                .addComponent(taw_bttn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(custom, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(the_opportunity_button)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton8)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(TSLSMBODH_bttn)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(taw_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(the_opportunity_button, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TSLSMBODH_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(trace_my_steps_button, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(vbab1_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(vbab2_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(vbab3_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(vbab123_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(vbab123_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(trace_my_steps_button, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cmm1_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tseventy_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btv_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmm2_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cmm2_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(tify_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(fful1_bttn1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(fful2_bttn2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(taw_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(the_opportunity_button, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TSLSMBODH_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
@@ -331,37 +344,37 @@ public class POSScreenUser extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane1.addTab("Paperback", jPanel1);
+        jTabbedPane1.addTab("HeartStone VS", jPanel1);
 
-        vbab123h_bttn.setText("VBAB123");
-        vbab123h_bttn.setEnabled(false);
-        vbab123h_bttn.addActionListener(new java.awt.event.ActionListener() {
+        BTV_bttn2.setText("BTV");
+        BTV_bttn2.setEnabled(false);
+        BTV_bttn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                vbab123h_bttnActionPerformed(evt);
+                BTV_bttn2ActionPerformed(evt);
             }
         });
 
-        taw_bttn2.setText("TAW");
-        taw_bttn2.setEnabled(false);
-        taw_bttn2.addActionListener(new java.awt.event.ActionListener() {
+        tseventy_bttn.setText("270");
+        tseventy_bttn.setEnabled(false);
+        tseventy_bttn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                taw_bttn2ActionPerformed(evt);
+                tseventy_bttnActionPerformed(evt);
             }
         });
 
-        taw_bttn3.setText("TO (DJ)");
-        taw_bttn3.setEnabled(false);
-        taw_bttn3.addActionListener(new java.awt.event.ActionListener() {
+        tms_bttn.setText("TMS");
+        tms_bttn.setEnabled(false);
+        tms_bttn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                taw_bttn3ActionPerformed(evt);
+                tms_bttnActionPerformed(evt);
             }
         });
 
-        taw_bttn4.setText("TO / TSLSMBODH");
-        taw_bttn4.setEnabled(false);
-        taw_bttn4.addActionListener(new java.awt.event.ActionListener() {
+        SLMPD_bttn.setText("SLMPD");
+        SLMPD_bttn.setEnabled(false);
+        SLMPD_bttn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                taw_bttn4ActionPerformed(evt);
+                SLMPD_bttnActionPerformed(evt);
             }
         });
 
@@ -371,28 +384,28 @@ public class POSScreenUser extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(taw_bttn2)
+                .addComponent(tseventy_bttn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(vbab123h_bttn)
+                .addComponent(BTV_bttn2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(taw_bttn3)
+                .addComponent(tms_bttn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(taw_bttn4)
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addComponent(SLMPD_bttn)
+                .addContainerGap(203, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(vbab123h_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(taw_bttn2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(taw_bttn3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(taw_bttn4, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BTV_bttn2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tseventy_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tms_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SLMPD_bttn, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(340, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Hardcover", jPanel2);
+        jTabbedPane1.addTab("Pocket Reads", jPanel2);
 
         jMenu2.setText("File");
 
@@ -543,58 +556,67 @@ public class POSScreenUser extends javax.swing.JFrame {
         
 
         switch (table.getModel().getValueAt(row, 0).toString()) {
-            case "VBAB123_H": //change to hardback vbab123
+            case "Vacillating Brown and Black: Vol. 1 - 3 (Hardcover)": //change to hardback vbab123
            deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_H_VBAB123, TSI.STOCK_H_VBAB123, null, price);
 break;
      
                  //add deletehelper
 
         
-            case "TO-paperback":
+            case "The Opportunity (softcover)":
                     deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TO_gen, TSI.STOCK_TO_gen, the_opportunity_button, price);
               break;
 
-            case "TMS":
+            case "Trace My Steps (Softcover)":
                    deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TMS, TSI.STOCK_TMS, null, price);
 break;
             
 
-            case "VBAB1":
+            case "Vacillating Brown and Black: Vol. 1 (Softcover)":
             deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_VBAB1, TSI.STOCK_VBAB1, vbab1_bttn, price);
               break;
 
-            case "VBAB2":
+            case "Vacillating Brown and Black: Vol. 2 (Softcover)":
                deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_VBAB2, TSI.STOCK_VBAB2, vbab2_bttn, price);
               break;
 
-            case "VBAB3":
+            case "Vacillating Brown and Black: Vol. 3 (Softcover)":
                 deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_VBAB3, TSI.STOCK_VBAB3, vbab3_bttn, price);
               break;
-           case "VBAB123":
+           case "Vacillating Brown and Black: Vol. 1 - 3 (Softcover)":
                 deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_VBAB123, TSI.STOCK_VBAB123, vbab123_bttn, price);
               break;
-           case "CMM1-paperback":
+           case "Call me maybe: Vol. 1 (Softcover)":
             deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_CMM1, TSI.STOCK_CMM1, cmm1_bttn, price);
               break;
-            case "CMM2-paperback":
+            case "Call me maybe: Vol. 2 (softcover)":
             deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_CMM2, TSI.STOCK_CMM2, cmm2_bttn, price);
               break;
 
-       
+       case "Faithful: Vol. 1 (Softcover)":
+            deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_FFUL1, TSI.STOCK_FFUL1, fful1_bttn1, price);
+              break;
+      case "Faithful: Vol. 2 (Softcover)":
+            deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_FFUL2, TSI.STOCK_FFUL2, fful2_bttn2, price);
+              break;
+              
+                    case "Till I Find You (Softcover)":
+            deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TIFY, TSI.STOCK_TIFY, tify_bttn, price);
+              break;
 
-           case "270-paperback":
+           case "270 (softcover)":
               deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_270_paperback, TSI.STOCK_270_paperback, tseventy_bttn, price);
               break;
         
               
               
-                case "TAW":
+                case "The American Way":
               deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_TAW, TSI.STOCK_TAW, taw_bttn, price);
               break;
               
               
-                case "BTV":
-              deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_BTV, TSI.STOCK_BTV, btv_bttn, price);
+                case "Beyond the Veil":
+              deleteHelper.delete(model, numRows2, row, priceToRemove, TSI.BILL_TOTAL, TSI.INVENTORY_BTV, TSI.STOCK_BTV, BTV_bttn2, price);
               break;
               
               
@@ -769,9 +791,9 @@ checkForStockHelper.checkForStock(TSI.INVENTORY_CMM2 , cmm2_bttn);
 
 
 checkForStockHelper.checkForStock(TSI.INVENTORY_TAW , taw_bttn);
-checkForStockHelper.checkForStock(TSI.INVENTORY_BTV, btv_bttn);
+checkForStockHelper.checkForStock(TSI.INVENTORY_BTV, BTV_bttn2);
 
-    checkForStockHelper.checkForStock(TSI.INVENTORY_H_VBAB123, vbab123h_bttn);
+    checkForStockHelper.checkForStock(TSI.INVENTORY_H_VBAB123, BTV_bttn2);
 
 
         
@@ -855,7 +877,7 @@ checkForStockHelper.checkForStock(TSI.INVENTORY_BTV, btv_bttn);
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "TO-paperback", p.PRICE_TO_gen, price);
+        atbHelper.addToTable(model, "The Opportunity (softcover)", p.PRICE_TO_gen, price);
 
 TSI.INVENTORY_TO_gen = TSI.INVENTORY_TO_gen - 1;
 
@@ -866,25 +888,6 @@ TSI.INVENTORY_TO_gen = TSI.INVENTORY_TO_gen - 1;
         
         // TODO add your handling code here:
     }//GEN-LAST:event_the_opportunity_buttonActionPerformed
-
-    private void trace_my_steps_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trace_my_steps_buttonActionPerformed
-        
-
-        
-        
-        DefaultTableModel model = (DefaultTableModel) table.getModel();
-
-        addToBillHelper atbHelper = new addToBillHelper();
-
-        atbHelper.addToTable(model, "TMS", p.PRICE_TMS, price);
-
-TSI.INVENTORY_TMS = TSI.INVENTORY_TMS - 1;
-
-        if (TSI.INVENTORY_TMS == 0) {
-            trace_my_steps_button.setEnabled(false);
-        }   
-                // TODO add your handling code here:
-    }//GEN-LAST:event_trace_my_steps_buttonActionPerformed
 
     private void TSLSMBODH_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TSLSMBODH_bttnActionPerformed
 
@@ -908,7 +911,7 @@ TSI.INVENTORY_TSLSMBODH = TSI.INVENTORY_TSLSMBODH - 1;
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "VBAB1", p.PRICE_VBAB1, price);
+        atbHelper.addToTable(model, "Vacillating Brown and Black: Vol. 1 (Softcover)", p.PRICE_VBAB1, price);
 
 TSI.INVENTORY_VBAB1 = TSI.INVENTORY_VBAB1 - 1;
 
@@ -922,7 +925,7 @@ TSI.INVENTORY_VBAB1 = TSI.INVENTORY_VBAB1 - 1;
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "VBAB2", p.PRICE_VBAB2, price);
+        atbHelper.addToTable(model, "Vacillating Brown and Black: Vol. 2 (Softcover)", p.PRICE_VBAB2, price);
 
 TSI.INVENTORY_VBAB2 = TSI.INVENTORY_VBAB2 - 1;
 
@@ -936,7 +939,7 @@ DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "VBAB3", p.PRICE_VBAB3, price);
+        atbHelper.addToTable(model, "Vacillating Brown and Black: Vol. 3 (Softcover)", p.PRICE_VBAB3, price);
 
 TSI.INVENTORY_VBAB3 = TSI.INVENTORY_VBAB3 - 1;
 
@@ -950,7 +953,7 @@ DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "VBAB123_H", p.PRICE_VBAB123, price);
+        atbHelper.addToTable(model, "Vacillating Brown and Black: Vol. 1 - 3 (Softcover)", p.PRICE_VBAB123, price);
 
 TSI.INVENTORY_VBAB123 = TSI.INVENTORY_VBAB123 - 1;
 
@@ -959,47 +962,12 @@ TSI.INVENTORY_VBAB123 = TSI.INVENTORY_VBAB123 - 1;
         }          // TODO add your handling code here:
     }//GEN-LAST:event_vbab123_bttnActionPerformed
 
-    private void tseventy_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tseventy_bttnActionPerformed
-        
-        
-            
-        
-        
-        
-        DefaultTableModel model = (DefaultTableModel) table.getModel();
-
-        addToBillHelper atbHelper = new addToBillHelper();
-
-        atbHelper.addToTable(model, "270-paperback", p.PRICE_270_paperback, price);
-
-TSI.INVENTORY_270_paperback = TSI.INVENTORY_270_paperback - 1;
-
-        if (TSI.INVENTORY_270_paperback == 0) {
-            tseventy_bttn.setEnabled(false);
-        }   
-                   // TODO add your handling code here:
-    }//GEN-LAST:event_tseventy_bttnActionPerformed
-
-    private void btv_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btv_bttnActionPerformed
-DefaultTableModel model = (DefaultTableModel) table.getModel();
-
-        addToBillHelper atbHelper = new addToBillHelper();
-
-        atbHelper.addToTable(model, "BTV", p.PRICE_BTV, price);
-
-TSI.INVENTORY_BTV = TSI.INVENTORY_BTV - 1;
-
-        if (TSI.INVENTORY_BTV == 0) {
-           btv_bttn.setEnabled(false);
-        }         // TODO add your handling code here:
-    }//GEN-LAST:event_btv_bttnActionPerformed
-
     private void cmm1_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmm1_bttnActionPerformed
 DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "CMM1", p.PRICE_CMM1, price);
+        atbHelper.addToTable(model, "Call me maybe: Vol. 1 (softcover)", p.PRICE_CMM1, price);
 
 TSI.INVENTORY_CMM1 = TSI.INVENTORY_CMM1 - 1;
 
@@ -1013,7 +981,7 @@ DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "CMM2", p.PRICE_CMM2, price);
+        atbHelper.addToTable(model, "Call me maybe: Vol. 2 (softcover)", p.PRICE_CMM2, price);
 
 TSI.INVENTORY_CMM2 = TSI.INVENTORY_CMM2 - 1;
 
@@ -1027,7 +995,7 @@ DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "TAW", p.PRICE_TAW, price);
+        atbHelper.addToTable(model, "The American Way", p.PRICE_TAW, price);
 
 TSI.INVENTORY_TAW = TSI.INVENTORY_TAW - 1;
 
@@ -1036,33 +1004,122 @@ TSI.INVENTORY_TAW = TSI.INVENTORY_TAW - 1;
         }            // TODO add your handling code here:
     }//GEN-LAST:event_taw_bttnActionPerformed
 
-    private void vbab123h_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vbab123h_bttnActionPerformed
+    private void BTV_bttn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTV_bttn2ActionPerformed
 DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         addToBillHelper atbHelper = new addToBillHelper();
 
-        atbHelper.addToTable(model, "VBAB123-H", p.PRICE_H_VBAB123, price);
+        atbHelper.addToTable(model, "Beyond the Veil", p.PRICE_BTV, price);
+
+TSI.INVENTORY_BTV = TSI.INVENTORY_BTV - 1;
+
+        if (TSI.INVENTORY_BTV == 0) {
+           BTV_bttn2.setEnabled(false);
+        } 
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BTV_bttn2ActionPerformed
+
+    private void tseventy_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tseventy_bttnActionPerformed
+        
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
+
+        addToBillHelper atbHelper = new addToBillHelper();
+
+        atbHelper.addToTable(model, "270 (softcover)", p.PRICE_270_paperback, price);
+
+TSI.INVENTORY_270_paperback = TSI.INVENTORY_270_paperback - 1;
+
+        if (TSI.INVENTORY_270_paperback == 0) {
+            tseventy_bttn.setEnabled(false);
+        }          // TODO add your handling code here:
+    }//GEN-LAST:event_tseventy_bttnActionPerformed
+
+    private void tms_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tms_bttnActionPerformed
+    DefaultTableModel model = (DefaultTableModel) table.getModel();
+
+        addToBillHelper atbHelper = new addToBillHelper();
+
+        atbHelper.addToTable(model, "Trace My Steps (Softcover)", p.PRICE_TMS, price);
+
+        TSI.INVENTORY_TMS = TSI.INVENTORY_TMS - 1;
+
+        if (TSI.INVENTORY_TMS == 0) {
+            trace_my_steps_button.setEnabled(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_tms_bttnActionPerformed
+
+    private void SLMPD_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SLMPD_bttnActionPerformed
+  DefaultTableModel model = (DefaultTableModel) table.getModel();
+
+        addToBillHelper atbHelper = new addToBillHelper();
+
+        atbHelper.addToTable(model, "SLMPD 1", p.PRICE_SLMPD, price);
+
+        TSI.INVENTORY_SLMPD = TSI.INVENTORY_SLMPD - 1;
+
+        if (TSI.INVENTORY_SLMPD == 0) {
+            SLMPD_bttn.setEnabled(false);
+        }         // TODO add your handling code here:
+    }//GEN-LAST:event_SLMPD_bttnActionPerformed
+
+    private void trace_my_steps_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trace_my_steps_buttonActionPerformed
+DefaultTableModel model = (DefaultTableModel) table.getModel();
+
+        addToBillHelper atbHelper = new addToBillHelper();
+
+        atbHelper.addToTable(model, "Vacillating Brown and Black: Vol. 1 - 3 (Hardcover)", p.PRICE_H_VBAB123, price);
 
 TSI.INVENTORY_H_VBAB123 = TSI.INVENTORY_H_VBAB123 - 1;
 
         if (TSI.INVENTORY_H_VBAB123 == 0) {
-          vbab123h_bttn.setEnabled(false);
+          BTV_bttn2.setEnabled(false);
         }    
 
+    
         // TODO add your handling code here:
-    }//GEN-LAST:event_vbab123h_bttnActionPerformed
+    }//GEN-LAST:event_trace_my_steps_buttonActionPerformed
 
-    private void taw_bttn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taw_bttn2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_taw_bttn2ActionPerformed
+    private void fful1_bttn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fful1_bttn1ActionPerformed
+ DefaultTableModel model = (DefaultTableModel) table.getModel();
 
-    private void taw_bttn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taw_bttn3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_taw_bttn3ActionPerformed
+        addToBillHelper atbHelper = new addToBillHelper();
 
-    private void taw_bttn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taw_bttn4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_taw_bttn4ActionPerformed
+        atbHelper.addToTable(model, "Faithful: Vol. 1 (Softcover)", p.PRICE_FFUL1, price);
+
+TSI.INVENTORY_FFUL1 = TSI.INVENTORY_FFUL1 - 1;
+
+        if (TSI.INVENTORY_FFUL1 == 0) {
+           fful1_bttn1.setEnabled(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_fful1_bttn1ActionPerformed
+
+    private void tify_bttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tify_bttnActionPerformed
+DefaultTableModel model = (DefaultTableModel) table.getModel();
+
+        addToBillHelper atbHelper = new addToBillHelper();
+
+        atbHelper.addToTable(model, "Till I Find You (Softcover)", p.PRICE_TIFY, price);
+
+TSI.INVENTORY_TIFY = TSI.INVENTORY_TIFY - 1;
+
+        if (TSI.INVENTORY_TIFY == 0) {
+           tify_bttn.setEnabled(false);
+        }         // TODO add your handling code here:
+    }//GEN-LAST:event_tify_bttnActionPerformed
+
+    private void fful2_bttn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fful2_bttn2ActionPerformed
+ DefaultTableModel model = (DefaultTableModel) table.getModel();
+
+        addToBillHelper atbHelper = new addToBillHelper();
+
+        atbHelper.addToTable(model, "Faithful: Vol. 2 (Software)", p.PRICE_FFUL2, price);
+
+TSI.INVENTORY_FFUL2 = TSI.INVENTORY_FFUL2 - 1;
+
+        if (TSI.INVENTORY_FFUL2 == 0) {
+           fful2_bttn2.setEnabled(false);
+        }          // TODO add your handling code here:
+    }//GEN-LAST:event_fful2_bttn2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1104,11 +1161,14 @@ TSI.INVENTORY_H_VBAB123 = TSI.INVENTORY_H_VBAB123 - 1;
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BTV_bttn2;
+    private javax.swing.JButton SLMPD_bttn;
     private javax.swing.JButton TSLSMBODH_bttn;
-    private javax.swing.JButton btv_bttn;
     private javax.swing.JButton cmm1_bttn;
     private javax.swing.JButton cmm2_bttn;
     private javax.swing.JTextField custom;
+    private javax.swing.JButton fful1_bttn1;
+    private javax.swing.JButton fful2_bttn2;
     private javax.swing.JButton jButton17;
     public static javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -1131,14 +1191,12 @@ TSI.INVENTORY_H_VBAB123 = TSI.INVENTORY_H_VBAB123 - 1;
     public javax.swing.JLabel price;
     public static javax.swing.JTable table;
     private javax.swing.JButton taw_bttn;
-    private javax.swing.JButton taw_bttn2;
-    private javax.swing.JButton taw_bttn3;
-    private javax.swing.JButton taw_bttn4;
     private javax.swing.JButton the_opportunity_button;
+    private javax.swing.JButton tify_bttn;
+    private javax.swing.JButton tms_bttn;
     private javax.swing.JButton trace_my_steps_button;
     private javax.swing.JButton tseventy_bttn;
     private javax.swing.JButton vbab123_bttn;
-    private javax.swing.JButton vbab123h_bttn;
     private javax.swing.JButton vbab1_bttn;
     private javax.swing.JButton vbab2_bttn;
     private javax.swing.JButton vbab3_bttn;

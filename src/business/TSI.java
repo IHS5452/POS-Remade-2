@@ -41,6 +41,13 @@ public class TSI {
     public static int STOCK_CMM1 ;
     public static int STOCK_CMM2 ;
 
+    //other vac saga
+    
+        public static int STOCK_TIFY ;
+    public static int STOCK_FFUL1;
+         public static int STOCK_FFUL2; 
+    
+    
 
     //standalone
     public static int STOCK_TAW ;
@@ -62,9 +69,12 @@ public class TSI {
    
     public static int INVENTORY_H_VBAB123;
 
+    public static int INVENTORY_SLMPD;
 
-    
+     public static int INVENTORY_TIFY;
 
+      public static int INVENTORY_FFUL1;
+       public static int INVENTORY_FFUL2;
 
         //270 and editions
         public static int INVENTORY_270_paperback ;
